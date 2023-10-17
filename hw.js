@@ -88,26 +88,33 @@
 // }
        
 
-// make a loop that goes from 1 to 100
-for ( let num = 1; num < 101; num ++ ) {
+// // make a loop that goes from 1 to 100
+// for ( let num = 1; num < 101; num ++ ) {
   
-    // check if the number is divisible by 3 or 5
-    let checkForThree = num % 3;
-    let checkForFive = num % 5;
+//     // check if the number is divisible by 3 or 5
+//     let checkForThree = num % 3;
+//     let checkForFive = num % 5;
     
-    // if the number is divisible by both 3 and 5, then print FizzBuzz
-    if ( (checkForThree == 0) && (checkForFive == 0) ) 
-        console.log( "FizzBuzz");
+//     // if the number is divisible by both 3 and 5, then print FizzBuzz
+//     if ( (checkForThree == 0) && (checkForFive == 0) ) 
+//         console.log( "FizzBuzz");
     
-    // if the number is divisible by 3, then print Fizz
-    else if (checkForThree == 0)
-      console.log( "Fizz");
+//     // if the number is divisible by 3, then print Fizz
+//     else if (checkForThree == 0)
+//       console.log( "Fizz");
     
-    // if the number is divisible by 5, then print Buzz
-    else if (checkForFive == 0)
-      console.log( "Buzz");
+//     // if the number is divisible by 5, then print Buzz
+//     else if (checkForFive == 0)
+//       console.log( "Buzz");
     
-    // otherwise just print the number
-    else
-      console.log( num );
-  } 
+//     // otherwise just print the number
+//     else
+//       console.log( num );
+//   } 
+
+for (let i = 1; i <= 100; i++){
+     if (i % 3 == 0) console.log("Fizz");
+    else if (i % 5 == 0) console.log("Buzz");
+    if (i % 3 == 0 && i % 5 == 0) console.log("FizzBuzz");
+    else console.log(i); 
+}
